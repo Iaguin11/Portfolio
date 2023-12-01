@@ -65,9 +65,16 @@ export const TitleAndLinks = styled.div`
       border: 0;
       border-radius: 10px;
       font-weight: 700;
+
+      transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+      a {
+        text-decoration: none;
+        color: ${(props) => props.theme.claro};
+      }
       &:hover {
         transform: scaleY(1.1);
-        transition: background-color 0.2s ease-in-out;
         color: ${(props) => props.theme.claro};
       }
     }

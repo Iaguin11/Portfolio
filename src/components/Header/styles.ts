@@ -22,6 +22,7 @@ export const NavMenu = styled.nav`
     color: ${(props) => props.theme.rosa};
     display: block;
     transform-origin: -20px 50%;
+    cursor: pointer;
   }
   ul,
   li {

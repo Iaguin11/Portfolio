@@ -36,9 +36,14 @@ export const Circule = styled.span`
   padding: 5px;
   border-radius: 50px;
   cursor: pointer;
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.claro};
+  }
 
   &:hover {
     background-color: ${(props) => props.theme.rosa};
+
     transition: background-color 0.3s;
   }
 `

@@ -14,7 +14,6 @@ export const SoftContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 20px; */
 
   div {
     display: grid;

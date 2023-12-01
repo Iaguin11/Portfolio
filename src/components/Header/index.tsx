@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import { useAnimate, stagger } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { MotionButton, NavContainer, NavMenu } from './styles'
@@ -60,10 +61,22 @@ export function Header() {
             clipPath: 'inset(10% 50% 90% 50% round 10px)',
           }}
         >
-          <li>Home</li>
-          <li>Projetos</li>
-          <li>Contato</li>
-        </ul>{' '}
+          <li>
+            <Link to="home" smooth={true} duration={2000}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="MyProjects" smooth={true} duration={2000}>
+              Projetos
+            </Link>
+          </li>
+          <li>
+            <Link to="Contact" smooth={true} duration={2000}>
+              Contato
+            </Link>
+          </li>
+        </ul>
       </NavMenu>
     </NavContainer>
   )

@@ -8,19 +8,23 @@ import {
   HomeH1,
   HomeH2,
 } from './styles'
-import { CaretDown, GithubLogo, InstagramLogo } from 'phosphor-react'
+import {
+  CaretDown,
+  GithubLogo,
+  WhatsappLogo,
+  LinkedinLogo,
+} from 'phosphor-react'
 
 export function Home() {
   return (
     <>
-      <HomeContainer>
+      <HomeContainer id="home">
         <Header />
         <HomeDiv>
           <HomeH1
             initial={{ y: -40 }}
             animate={{ y: 10 }}
             transition={{ type: 'spring', stiffness: 120 }}
-            // transition={{ delay: 0.2 }}
           >
             Olá, Me chamo Iago Novaes
           </HomeH1>
@@ -33,10 +37,31 @@ export function Home() {
           </HomeH2>
           <HomeCircule>
             <Circule>
-              <GithubLogo size={34} />
+              <a
+                href="https://github.com/Iaguin11"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <GithubLogo size={34} />
+              </a>
             </Circule>
             <Circule>
-              <InstagramLogo size={34} />
+              <a
+                href="https://www.linkedin.com/in/iago-novaes-dev/"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <LinkedinLogo size={34} />
+              </a>
+            </Circule>
+            <Circule>
+              <a
+                href="https://wa.me/5522997509481"
+                target="_black"
+                rel="noopener noreferrer"
+              >
+                <WhatsappLogo size={34} />
+              </a>
             </Circule>
           </HomeCircule>
         </HomeDiv>

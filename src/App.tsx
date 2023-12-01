@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { AboutMe } from './pages/AboutMe'
 import { SoftSkill } from './pages/SoftSkills'
 import { MyProjects } from './pages/MyProjects'
+import { Contact } from './pages/Contact'
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
       <AboutMe />
       <SoftSkill />
       <MyProjects />
+      <Contact />
     </ThemeProvider>
   )
 }

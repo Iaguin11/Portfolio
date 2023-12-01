@@ -3,7 +3,7 @@ import { MyContainer } from './styles'
 
 export function MyProjects() {
   return (
-    <MyContainer>
+    <MyContainer id="MyProjects">
       <Carousel />
     </MyContainer>
   )

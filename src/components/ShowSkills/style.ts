@@ -7,6 +7,9 @@ export const ShowSkillsContainer = styled.div`
   text-align: center;
   padding: 10px;
   font-size: 4rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 
   border-radius: 16px;
   border: 1px solid ${(props) => props.theme.rosa};
