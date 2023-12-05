@@ -1,10 +1,17 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakponits'
 
 export const NavContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 20px;
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    padding-right: 10px;
+  }
+  @media (max-width: 500px) {
+    padding-right: 10px;
+  }
 `
 
 export const NavMenu = styled.nav`
@@ -29,6 +36,12 @@ export const NavMenu = styled.nav`
     list-style: none;
     margin: 0;
     padding: 10px;
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    width: 40%;
+  }
+  @media (max-width: 500px) {
+    width: 20%;
   }
 `
 export const MotionButton = styled(motion.button)`

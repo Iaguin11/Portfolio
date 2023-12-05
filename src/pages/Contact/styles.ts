@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import about from '../../assets/about.svg'
 import blurry from '../../assets/blurry.svg'
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakponits'
 
 export const ContainerContact = styled.div`
   height: 70vh;
@@ -18,6 +19,16 @@ export const ContainerContact = styled.div`
     border-bottom: 1px solid white;
     max-width: 300px;
     margin: 0 auto;
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    h1 {
+      max-width: 200px;
+    }
+  }
+  @media (max-width: 500px) {
+    h1 {
+      max-width: 200px;
+    }
   }
 `
 export const ContentInput = styled.div`
@@ -66,6 +77,37 @@ export const ContentInput = styled.div`
       line-height: normal;
     }
   }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    div {
+      flex-direction: column;
+      gap: 30px;
+    }
+    form {
+      gap: 40px;
+      input {
+        width: 250px;
+      }
+    }
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    form {
+      gap: 30px;
+      input {
+        width: 200px;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    form {
+      div {
+        flex-direction: column;
+        gap: 30px;
+      }
+      input {
+        width: 250px;
+      }
+    }
+  }
 `
 export const DivTextArea = styled.div`
   textarea {
@@ -75,6 +117,25 @@ export const DivTextArea = styled.div`
     color: ${(props) => props.theme.claro};
     border: 1px solid ${(props) => props.theme.rosa};
     border-radius: 8px;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    textarea {
+      width: 500px;
+      height: 150px;
+    }
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    textarea {
+      width: 200px;
+      height: 100px;
+    }
+  }
+  @media (max-width: 500px) {
+    textarea {
+      width: 250px;
+      height: 100px;
+    }
   }
 `
 export const ButtonContact = styled.button`
@@ -100,5 +161,15 @@ export const ButtonContact = styled.button`
   &:hover {
     transform: scale(1.1);
     background: ${(props) => props.theme.rosa};
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    width: 180px;
+    border-radius: 8px;
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    border-radius: 8px;
+  }
+  @media (max-width: 500px) {
+    width: 190px;
   }
 `

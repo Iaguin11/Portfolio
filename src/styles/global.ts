@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { DEVICE_BREAKPOINTS } from './deviceBreakponits'
 
 export const GlobalStyle = createGlobalStyle`
   *{
@@ -9,6 +10,13 @@ export const GlobalStyle = createGlobalStyle`
     :focus {
       outline: 0;
       box-sizing: 0 0 0 2px ${(props) => props.theme['gray-400']};
+    }
+    :root {
+      font-size: 16px;
+
+      @media (max-width: ${DEVICE_BREAKPOINTS.MD}){
+        font-size: 12px;
+      }
     }
 
     body{

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { SwiperSlide } from 'swiper/react'
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakponits'
 
 export const ContainerProjects = styled.div`
   height: 10vh;
@@ -11,6 +12,11 @@ export const ContainerProjects = styled.div`
     text-align: center;
     margin: 2rem;
   }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    height: 30vh;
+  }
 `
 export const ContentSwiperContainer = styled(SwiperSlide)`
   display: flex;
@@ -19,6 +25,12 @@ export const ContentSwiperContainer = styled(SwiperSlide)`
   background-color: transparent;
   padding: 1rem;
   height: 40vh;
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    height: 70vh;
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    height: 55vh;
+  }
 `
 export const ContentSwiper = styled.div`
   width: 484px;
@@ -36,6 +48,25 @@ export const ContentSwiper = styled.div`
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid ${(props) => props.theme.rosa};
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    border: none;
+    img {
+      height: 130px;
+    }
+  }
+  @media (max-width: 500px) {
+    border: none;
+    img {
+      border: none;
+      height: 140px;
+    }
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.XS}) {
+    border: none;
+    img {
+      height: 120px;
+    }
   }
 `
 export const TitleAndLinks = styled.div`

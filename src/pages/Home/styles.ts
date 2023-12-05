@@ -1,11 +1,20 @@
 import styled from 'styled-components'
 import Home from '../../assets/home.svg'
 import { motion } from 'framer-motion'
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakponits'
 
 export const HomeContainer = styled.main`
   height: 100vh;
   background: url(${Home}) no-repeat;
   background-size: cover;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    background: url(${Home}) no-repeat center;
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    background: url(${Home}) no-repeat center;
+    background-size: 400px;
+  }
 `
 export const HomeDiv = styled(motion.div)`
   height: 80vh;
@@ -19,11 +28,23 @@ export const HomeH1 = styled(motion.h1)`
   color: ${(props) => props.theme.rosa};
   font-size: 4rem;
   font-weight: 600;
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    font-size: 2rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 2.3rem;
+  }
 `
 export const HomeH2 = styled(motion.h2)`
   color: ${(props) => props.theme.claro};
   font-size: 3rem;
   font-weight: 100;
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 1.6rem;
+  }
 `
 export const HomeCircule = styled.div`
   display: flex;
@@ -45,6 +66,12 @@ export const Circule = styled.span`
     background-color: ${(props) => props.theme.rosa};
 
     transition: background-color 0.3s;
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    padding: 3px;
+  }
+  @media (max-width: 500px) {
+    padding: 3px;
   }
 `
 export const ArrowContainer = styled.div`

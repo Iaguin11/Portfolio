@@ -65,11 +65,13 @@ export function Home() {
             </Circule>
           </HomeCircule>
         </HomeDiv>
-        <ArrowContainer>
-          <span>
-            <CaretDown size={36} />
-          </span>
-        </ArrowContainer>
+        <div>
+          <ArrowContainer>
+            <span>
+              <CaretDown size={36} />
+            </span>
+          </ArrowContainer>
+        </div>
       </HomeContainer>
     </>
   )
