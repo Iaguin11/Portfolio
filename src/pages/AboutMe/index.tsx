@@ -8,14 +8,13 @@ export function AboutMe() {
           <div>
             <h1>Eu sou Iago Novaes</h1>
             <span>
-              Atualmente, estou focado em aprimorar minhas habilidades no
-              desenvolvimento de front-end. Minha experiência inclui
-              participação em projetos pessoais, onde pude aprimorar tanto
-              minhas habilidades técnicas quanto interpessoais. Acredito que
-              minha capacidade de colaborar efetivamente em grupo, juntamente
-              com minha vontade constante de aprender Estou aberto a aprender
-              novas tecnologias necessárias para contribuir de maneira
-              significativa com a equipe.
+              Atualmente estou focado em aprimorar minhas habilidades no
+              desenvolvimento front-end. Acredito que minha capacidade de
+              colaborar efetivamente em grupo, juntamente com minha vontade de
+              aprender e me manter atualizado no mundo do desenvolvimento. Estou
+              sempre em busca de novas oportunidades, para aprimorar meus
+              conhecimentos, estou confiante de que posso fazer uma contribuição
+              significativa.
             </span>
           </div>
         </AboutContent>

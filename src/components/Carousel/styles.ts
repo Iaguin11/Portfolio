@@ -47,7 +47,6 @@ export const ContentSwiper = styled.div`
     background-size: cover;
     object-fit: cover;
     border-radius: 8px;
-    border: 1px solid ${(props) => props.theme.rosa};
   }
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
     border: none;

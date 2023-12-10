@@ -6,6 +6,7 @@ import { AboutMe } from './pages/AboutMe'
 import { SoftSkill } from './pages/SoftSkills'
 import { MyProjects } from './pages/MyProjects'
 import { Contact } from './pages/Contact'
+import { Footer } from './pages/Footer'
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
       <SoftSkill />
       <MyProjects />
       <Contact />
+      <Footer />
     </ThemeProvider>
   )
 }

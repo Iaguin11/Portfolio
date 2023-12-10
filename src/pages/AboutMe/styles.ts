@@ -48,30 +48,29 @@ export const AboutContent = styled.div`
     line-height: 140%;
     color: ${(props) => props.theme.white};
   }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     span {
-      width: 700px;
+      width: 1200px;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    span {
+      width: 800px;
+    }
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     span {
       width: 400px;
     }
   }
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    h1 {
-      font-size: 1.6rem;
-    }
     span {
-      width: 340px;
-      font-size: 1.3rem;
+      width: 350px;
     }
   }
   @media (max-width: ${DEVICE_BREAKPOINTS.XS}) {
     span {
       width: 300px;
-      font-size: 1.2rem;
     }
   }
 `

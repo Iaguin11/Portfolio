@@ -28,21 +28,21 @@ export const HomeH1 = styled(motion.h1)`
   color: ${(props) => props.theme.rosa};
   font-size: 4rem;
   font-weight: 600;
+  @media (max-width: 500px) {
+    font-size: 2.5rem;
+  }
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
     font-size: 2rem;
-  }
-  @media (max-width: 500px) {
-    font-size: 2.3rem;
   }
 `
 export const HomeH2 = styled(motion.h2)`
   color: ${(props) => props.theme.claro};
   font-size: 3rem;
   font-weight: 100;
-  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    font-size: 1.6rem;
-  }
   @media (max-width: 500px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
     font-size: 1.6rem;
   }
 `

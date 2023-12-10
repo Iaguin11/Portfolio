@@ -11,6 +11,7 @@ import { reposData } from '../../server'
 import imgAcademia from '../../assets/academia.png'
 import imgCalc from '../../assets/imgCal.png'
 import imgDtMoney from '../../assets/Dt-money.png'
+import imgECommerce from '../../assets/E-commerce.png'
 
 interface Repo {
   id: number
@@ -27,6 +28,7 @@ const imageMap: ImageMap = {
   'academia.png': imgAcademia,
   'imgCalc.png': imgCalc,
   'Dt-money.png': imgDtMoney,
+  'E-commerce.png': imgECommerce,
 }
 
 export function Carousel() {
